@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'cuentas',
     'posts',
     'comentarios',
+    'otramas',
 ]
 
 MIDDLEWARE_CLASSES = [

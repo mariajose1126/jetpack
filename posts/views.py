@@ -19,6 +19,17 @@ class PostView(View):
 		form.save(commit=False)
 		return redirect('todos')
 
+class PostDetailView(View):
+	def get(self,request,matti):
+		post=Post.objects.get(pk=matti)
+		template="posts/detalle.html"
+		context={
+		'post':post
+		}
+		return render(request,template,context)
+
+
+
 
 	# def post(self,request):
 	# 	form=PostForm(request.POST)
