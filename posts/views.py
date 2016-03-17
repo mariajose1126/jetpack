@@ -17,7 +17,7 @@ class PostView(View):
 	def post(self, request):
 		form=PostForm(request.POST)
 		form.save(commit=False)
-		return redirect('todos')
+		return redirect('posts:todos')
 
 class PostDetailView(View):
 	def get(self,request,matti):
