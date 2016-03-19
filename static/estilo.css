@@ -1,3 +1,19 @@
 body{
 	background:white;
 }
+
+nav{
+	background: navy;
+}
+
+#1{
+	max-height: 20px;
+}
+.logo_main-container {
+	width: 50%;
+	margin-left: 75px;
+
+}
+.logo_main-container .responsive-img {
+	width: 47%;
+}
